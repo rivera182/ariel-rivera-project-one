@@ -1,0 +1,858 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+q {
+    quotes: \201C \201D \2018 \2019;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, html input[type=button],
+/* 1 */
+
+input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+    cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body, figure {
+    margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* --------------------General-STYLES------------------- */
+
+:root {
+    --main-font: 'Cabin', sans-serif;
+    --accent-font: 'Great Vibes', cursive;
+    --main-color: #232323;
+    --accent-color: #fdc800;
+    --light-shade: #f8f8f8;
+    --background-color: #eaedf4;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+.description {
+    margin: 30px auto;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.section-padding {
+    padding: 100px 0px;
+}
+
+/* --------------------Styling begins here-------------------- */
+
+header {
+    background-image: url(tasty-assets/asset-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+}
+
+nav {
+    padding-top: 15px;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-logo h2 {
+    font-family: var(--accent-font);
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.menu {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin: 12px 0px 0px 20px;
+}
+
+.menu a {
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu a:hover {
+    color: var(--accent-color);
+    transition: 0.2s;
+}
+
+.hamburger-menu {
+    display: none;
+    float: right;
+    font-size: 3rem;
+    padding: 5px 0px;
+}
+
+/* --------Center-LOGO---------- */
+
+.main-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 0px;
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-logo span {
+    display: block;
+    font-family: var(--accent-font);
+    text-transform: none;
+    font-size: 12rem;
+    font-weight: normal;
+}
+
+.social-media-icons {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    margin: 0px;
+    transform: translateY(-50%);
+}
+
+.social-media-icons li {
+    margin-bottom: 8px;
+}
+
+.social-media-icons li:last-child {
+    margin-bottom: 0px;
+}
+
+.social-media-icons a {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    padding: 2px;
+}
+
+.social-media-icons a:hover {
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+/* -------------------About Section------------------------ */
+
+.about {
+    background-color: var(--background-color);
+}
+
+.about-heading {
+    font-family: var(--accent-font);
+    font-weight: normal;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.about-content p {
+    width: 65%;
+}
+
+.about h2, .about p {
+    text-align: center;
+}
+
+.section-btn {
+    text-align: center;
+}
+
+.section-btn a {
+    padding: 10px 25px;
+    background: var(--accent-color);
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.section-btn a:hover {
+    background: var(--main-color);
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+
+/* -------------------Icon links Section------------- */
+
+.icon-links {
+    background-color: #232323;
+    text-align: center;
+}
+
+.icon-link-btn {
+    display: inline-block;
+    margin: 0px 70px;
+}
+
+.icon-link-btn:first-child {
+    margin-left: 0px;
+}
+
+.icon-link-btn:last-child {
+    margin-right: 0px;
+}
+
+.icon-link-btn a {
+    color: var(--light-shade);
+    padding: 3px;
+}
+
+.icon-link-btn a:hover {
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.icon-btn {
+    font-size: 3rem;
+}
+
+.icon-link-btn p {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* -------------------Gallery Section------------- */
+
+.image-container {
+    margin: 0;
+}
+
+.image-container li {
+    float: left;
+    width: calc(33.3% - (80px / 3));
+    margin-right: 40px;
+}
+
+.image-container li:last-child {
+    margin-right: 0px;
+}
+
+/* -------------------Blog Post Section------------- */
+
+.blog {
+    width: 50%;
+    background-color: var(--background-color);
+}
+
+.blog-top {
+    float: left;
+}
+
+.blog-bottom {
+    float: right;
+}
+
+.section-wrapper {
+    max-width: 640px;
+    width: 80%;
+    text-align: center;
+    height: 464px;
+    padding: 100px 0px;
+}
+
+.blog-content {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.blog-content h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.blog-tips {
+    float: right;
+}
+
+.blog-recipes {
+    float: left;
+}
+
+.blog-img {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    height: 464px;
+}
+
+.blog-top-img {
+    float: right;
+    background-image: url(tasty-assets/asset-5.jpg);
+}
+
+.blog-bottom-img {
+    float: left;
+    background-image: url(tasty-assets/asset-6.jpg);
+}
+
+/* -------------Meet The Cook Section---------------- */
+
+.cook-portrait {
+    width: calc(40% - (25px / 2));
+    float: left;
+    margin-right: 25px;
+}
+
+.cook-portrait img {
+    width: 100%;
+    max-width: 358px;
+}
+
+.meet-cook-text {
+    width: calc(60% - (25px / 2));
+    float: left;
+    text-align: left;
+}
+
+.meet-the-cook .section-btn {
+    text-align: left;
+}
+
+.meet-the-cook h2 {
+    text-align: left;
+}
+
+/* -------------Contact Section---------------- */
+
+.contacts-info {
+    background-color: var(--main-color);
+    color: var(--light-shade);
+}
+
+.contacts-info-links {
+    width: 50%;
+    float: left;
+}
+
+.news-letter-form {
+    width: 50%;
+    float: right;
+}
+
+.sub-contact, .sub-pages {
+    width: calc(30% - (60px / 3));
+}
+
+.sub-posts {
+    width: calc(40% - (60px / 3));
+}
+
+.contact-sub-section {
+    float: left;
+    margin-right: 20px;
+}
+
+.contact-sub-section:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.contact-sub-section a {
+    color: var(--light-shade);
+}
+
+.contact-sub-section a:hover {
+    color: var(--accent-color);
+}
+
+.media-contacts-info-links {
+    display: none;
+}
+
+.media-contact-sub-section {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.media-contact-sub-section:last-child {
+    padding-bottom: 0px;
+}
+
+.media-contact-sub-section ul {
+    padding: 0px 20px;
+}
+
+.media-contact-sub-section li {
+    display: inline;
+}
+
+.media-contact-sub-section a {
+    color: var(--light-shade);
+}
+
+.media-contact-sub-section:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.media-contact-nav li {
+    border-right: 2px solid var(--light-shade);
+    padding: 0px 10px;
+}
+
+.media-contact-nav li:last-child {
+    border-right: none;
+}
+
+.contacts-info h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px 0px 5px;
+}
+
+.contacts-info ul {
+    margin: 0;
+    line-height: 2;
+}
+
+.news-letter-form p {
+    line-height: 2;
+    padding-bottom: 10px;
+}
+
+.email-input {
+    width: 70%;
+    border: none;
+    float: left;
+    padding: 10px 30px;
+}
+
+.email-submit {
+    width: 30%;
+    border: none;
+    float: left;
+    padding: 10px 0px;
+    text-align: center;
+    background: var(--accent-color);
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.email-input::placeholder {
+    color: #232323;
+    opacity: 1;
+}
+
+/* -------------Footer---------------- */
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #000;
+    color: gray;
+    padding: 15px 0px;
+}
+
+/* -------------MEDIA QUERIES---------------- */
+
+@media (max-width: 1160px) {
+    .social-media-icons a {
+        color: var(--main-color);
+    }
+    .social-media-icons a:hover {
+        opacity: 0.5;
+    }
+    .sub-pages {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .section-wrapper {
+        max-width: 500px;
+        width: 100%;
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 940px) {
+    .wrapper {
+        width: 90%;
+    }
+    .about-content p {
+        width: 80%;
+    }
+    .image-container li {
+        width: calc(33.3% - (60px / 3));
+        margin-right: 20px;
+    }
+    .cook-portrait {
+        padding: 70px 0px;
+    }
+    .contacts-info-links {
+        padding-top: 50px;
+        width: 100%;
+        float: none;
+    }
+    .news-letter-form {
+        width: 100%;
+        float: none;
+    }
+    .sub-contact, .sub-pages, .sub-posts {
+        width: calc(33.33% - (30px / 3));
+        text-align: center;
+    }
+    .sub-pages {
+        padding-left: 0px;
+    }
+    .contact-sub-section {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 50px 0px;
+    }
+    .icon-link-btn {
+        margin: 0px 50px;
+    }
+    .blog {
+        width: 100%;
+    }
+    .section-wrapper {
+        height: auto;
+    }
+    .blog-content {
+        max-width: 600px;
+    }
+    .blog-tips {
+        float: none;
+        margin: 0 auto;
+    }
+    .blog-recipes {
+        float: none;
+        margin: 0 auto;
+    }
+    .blog-img {
+        width: 100%;
+    }
+    .cook-portrait {
+        width: 100%;
+        margin: 0px;
+        padding: 0px 0px;
+    }
+    .cook-portrait img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .meet-cook-text {
+        width: 100%;
+        padding-top: 50px;
+    }
+    .meet-the-cook h2 {
+        text-align: center;
+    }
+    .meet-the-cook .section-btn {
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .icon-link-btn {
+        margin: 0px 30px;
+    }
+}
+
+@media (max-width: 525px) {
+    .social-media-icons {
+        display: none;
+    }
+    .about-heading {
+        font-size: 4.2rem;
+    }
+    .gallery {
+        padding: 0px;
+    }
+    .gallery .wrapper {
+        width: 100%;
+    }
+    .image-container li {
+        width: 50%;
+        margin-right: 0px;
+    }
+    .image-container li:last-child {
+        display: none;
+    }
+    .blog-content h2 {
+        font-size: 2.8rem;
+    }
+    .section-wrapper {
+        padding: 80px 20px;
+    }
+    .blog-content {
+        max-width: 300px;
+    }
+    .blog-img {
+        height: 264px;
+    }
+    .cook-portrait img {
+        max-width: 220px;
+    }
+    .meet-cook-text {
+        padding-top: 30px;
+    }
+    .contacts-info-links {
+        display: none;
+    }
+    .media-contacts-info-links {
+        display: block;
+        padding-top: 30px;
+    }
+    .news-letter-form-description {
+        text-align: center;
+    }
+    .email-input, .email-submit {
+        width: 100%;
+    }
+    .email-input {
+        margin-bottom: 10px;
+    }
+    .email-input::placeholder {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .icon-link-btn {
+        margin: 0px 0px 50px;
+        width: 100%;
+    }
+    .icon-link-btn:last-child {
+        margin: 0px;
+    }
+    .icon-btn {
+        font-size: 4rem;
+    }
+    .icon-link-btn p {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:320px) {
+    .main-logo h1 {
+        font-size: 2rem;
+    }
+    .main-logo span {
+        font-size: 8rem;
+    }
+}
